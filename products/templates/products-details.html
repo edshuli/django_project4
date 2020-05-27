@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+  <form method="post" action="{% url 'add_to_cart' product.id %}">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <input name="quantity" type="number" min="1" max="999" class="form-control w-25" value="1"
+                                required />
+                            <span class="input-group-btn">
+                                <button class="btn btn-success" type="submit"> <i class="fas fa-cart-plus"></i> Add to
+                                    cart</button>
+                            </span>
+                        </div>
+                        <!--/input-group-->
+                    </form>

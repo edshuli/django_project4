@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@100,200,300,400,500,600,700&family=EB+Garamond:ital,wght@1,100,200,300,400,500&family=Montserrat:ital,wght@1,100,200,300,400,500&display=swap" rel="stylesheet"');
+
+body {
+    max-width: 100%;
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Nav Bar */
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.bg-dark {
+    background-color: #e1d3d3!important;
+}
+
+.navbar-dark .navbar-brand {
+    color: #78726f;
+    font-family: 'Garamond', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-toggler-icon {
+    line-height: 0.5;
+    border: 1px solid #958d8b;
+    border-radius: .25rem;
+    padding: 0;
+}
+
+/* Delete the blue shadow from the navabar-toggler */
+.navbar-toggler:focus,
+.navabar-toggler:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn{
+    color: palevioletred;
+    border: 1px solid palevioletred;
+}
+
+.badge-warning {
+    color: #212529;
+    background-color: palevioletred;
+}
+
+.search-bar{
+    border:1px solid #e9ecef;
+    width: 55%;
+}
+
+i{
+    color: #db7294;
+    padding-right:5px;
+}
+
+/* Login */
+.log-header{
+    color:#d97396;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.4;
+    margin-bottom: .4em;
+}
+
+#reset{
+    color:palevioletred;
+}
+
+.login-container{
+    margin-top:20%;
+}
+
+.login{
+    padding: 1rem 2rem;
+    margin-top: 10vh;
+    border: 1px solid #8cd0e3;
+    border-radius: 10px;
+}
+
+.register{
+   padding: 1rem 2rem;
+    border: 1px solid #8cd0e3;
+    border-radius: 10px;  
+    margin-bottom: 10px;
+}
+
+#already-user{
+    color: #de86a4;
+}
+
+#sign-in{
+    color: #8CD0E3;
+}
+
+/* Products */
+.product-container{
+    margin-top:20%;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+  padding: 0;
+}
+
+img{
+    margin-bottom: 15px;
+}
+
+.product-name{
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 8px;
+    color: inherit;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.product-price {
+    color: #db7797;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #ededed;
+    color: #A9A9A9;
+}
+
+.icon-bar {
+    background-color: #fff;
+}
+
+.accountform {
+    padding-top: 20px;
+}
+
+
+/* Cart */
+.cart-container {
+  padding: 0.5rem 0;
+  width: 50%;
+}
+
+.btn-primary{
+    margin-left: -2.6rem;
+}
+
+.btn-success{
+    margin-left: 4px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+}
+
+
+
+ /*Jumbotron*/
+.callout-container {
+    background: url("../img/prod-image13.jpg") no-repeat bottom right fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.jumbotron {
+    margin-top: 125%;
+    background-color:transparent;
+}
+
+.lead {
+    margin: 25px 0;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1c1b1b;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+.btn-success{
+    color: white;
+    background: rgb(225,211,211);
+    background: linear-gradient(90deg, rgba(225,211,211,1) 0%, rgba(120,114,111,1) 50%, rgba(219,112,147,1) 100%);
+}
+
+.heading{
+    color:#1c1b1b;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+
+@media (min-width: 374px) and (max-width: 766px){
+    .jumbotron {
+        margin-top: 150%;
+}
+}
+
+@media (min-width: 767px) and (max-width: 1025px){
+    .jumbotron {
+        margin-top: 80%;
+}
+}
+
+@media (min-width:599px) and (max-width:1025px){
+.callout-container {
+    background: url("../img/test-image.jpg") no-repeat bottom right fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+  }
+.product-container {
+    margin-top: 10%;
+}  
+}
+
+/* IPAD PRO */
+
+@media (min-width:1023px){
+    .seachbar-form{
+       padding-left:230px;
+    }
+}
+
+/* Large Screens */
+
+@media (min-width:1300px){
+    .seachbar-form{
+       padding-left:450px;
+    }
+
+    .callout-container {
+    background: url("../img/test-image.jpg") no-repeat bottom right fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+  }
+  
+    .jumbotron {
+        margin-top: 25%;
+  }
+
+  .product-container {
+    margin-top: 5%;
+}  
+}
+
